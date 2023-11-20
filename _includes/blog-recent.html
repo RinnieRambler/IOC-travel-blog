@@ -1,0 +1,20 @@
+<section class="bg-[#E0DCD9]">
+    <div class="px-2 py-5p">
+        <h3 class="text-center p-5p">recently on the blog</h3>
+        <div class="grid grid-cols-4 gap-6">
+            
+                {% for item in site.posts %}
+            <div class="{% cycle 'col-span-1', 'col-span-2' %}">
+                <div style="background-image:url({{item.featured_image}})" class="min-h-[40vh] bg-center bg-cover">
+                </div>
+                <div class="py-5 px-2 max-w-[20vw]">
+                    <h4 class="uppercase font-sans">{{item.title}}</h4>
+                    <p>{{item.description}}</p>
+                    <a href="{{item.url}}" class="button">READ MORE</a>
+                </div>
+            </div>
+                {% endfor %}
+            
+        </div>
+    </div>
+</section>

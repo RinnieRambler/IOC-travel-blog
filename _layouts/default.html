@@ -14,9 +14,9 @@
                 <a href="#">LOGO</a>
             </nav>
             <nav class="flex gap-10">
-                <a href="#">BLOG</a>
-                <a href="#">SHOP</a>
-                <a href="#">MEMBERS LOGIN</a>
+                <a href="/blog">BLOG</a>
+                <a href="/shop">SHOP</a>
+                <a href="member-login">MEMBERS LOGIN</a>
             </nav>
         </div>
     </header>
@@ -25,8 +25,11 @@
         <section style="background-image:url({{page.banner-image}})" class="bg-cover bg-no-repeat min-h-screen">
             <div class="max-w-screen-xl mx-auto flex items-center min-h-[100vh] p-5p">
                 <div class="text-[#F2EFEC]">
-                    <h1 class="max-w-[40vw]">A whole new world.</h1>
-                    <p class="uppercase max-w-[22vw]">Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.</p>
+                    <h1 class="max-w-[40vw]">{{page.banner-heading}}</h1>
+                    <p class="uppercase max-w-[22vw]">{{page.banner-paragraph}}</p>
+                    {% if page.banner-url %}
+                    <a href="{{page.banner-url}}">READ MORE</a>
+                    {% endif %}
                 </div>
             </div>
         </section>

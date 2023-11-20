@@ -1,12 +1,16 @@
 ---
 layout: default
+banner-image: /assets/images/blog-assets/blog-bg-2.jpg
+banner-heading: Exploring Sumbawa.
+banner-paragraph: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+banner-url: /2023/01/03/third-post.html
 ---
 
-<section class="p-8 grid grid-cols-3 gap-4">
+<section class="p-8 columns-3 gap-4">
 
-	{% for post in site.posts %}
+	{% for post in site.posts limit: 9 %}
 	
-	{% include post-loop-item.html %}
+	{% include post-loop-item-adaptive.html %}
 	
 	{% endfor %}
 
