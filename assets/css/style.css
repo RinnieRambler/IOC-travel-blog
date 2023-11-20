@@ -33,7 +33,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: proxima-nova, ui-sans-serif; /* 4 */
+  font-family: montserrat, ui-sans; /* 4 */
   font-feature-settings: normal; /* 5 */
 }
 /*
@@ -95,7 +95,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: Inconsolata, ui-mono, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 /*
@@ -314,14 +314,14 @@ video {
 }
 h1, h2, h3, h4 {
   margin-bottom: 0.5em;
-  font-family: proxima-nova, ui-sans-serif;
+  font-family: italiana, ui-serif;
 }
 h1 {
-  font-size: 1.875rem;
+  font-size: 8rem;
   line-height: .85;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 3.75rem;
   line-height: .85;
 }
 h3 {
@@ -429,6 +429,14 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.button {
+  display: inline-block;
+  border-bottom-width: 2px;
+  border-color: inherit;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 .absolute {
   position: absolute;
 }
@@ -444,43 +452,117 @@ p {
 .m-4 {
   margin: 1rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
 .h-full {
   height: 100%;
 }
-.w-96 {
-  width: 24rem;
+.min-h-screen {
+  min-height: 100vh;
+}
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 .w-full {
   width: 100%;
 }
+.w-96 {
+  width: 24rem;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+.max-w-\[40vw\] {
+  max-width: 40vw;
+}
+.max-w-\[22vw\] {
+  max-width: 22vw;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
-.bg-yellow-400 {
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-16 {
+  gap: 4rem;
+}
+.border-t-2 {
+  border-top-width: 2px;
+}
+.border-inherit {
+  border-color: inherit;
+}
+.bg-\[\#F2EFEC\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(242 239 236 / var(--tw-bg-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
 .bg-stone-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-\[\#E0DCD9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 220 217 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-5p {
+  padding: 5%;
 }
 .p-8 {
   padding: 2rem;
@@ -488,8 +570,60 @@ p {
 .p-4 {
   padding: 1rem;
 }
-.p-2 {
-  padding: 0.5rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pb-\[2rem\] {
+  padding-bottom: 2rem;
+}
+.pl-1 {
+  padding-left: 0.25rem;
+}
+.pr-4 {
+  padding-right: 1rem;
+}
+.pr-6 {
+  padding-right: 1.5rem;
+}
+.pr-8 {
+  padding-right: 2rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.pr-12 {
+  padding-right: 3rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-\[\#F2EFEC\] {
+  --tw-text-opacity: 1;
+  color: rgb(242 239 236 / var(--tw-text-opacity));
+}
+.text-\[\#1E1E1E\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
@@ -501,6 +635,22 @@ html {
 /* ---------Default Styles to apply to whole project ------------ */
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+.first\:mt-4:first-child {
+  margin-top: 1rem;
+}
+
+.last\:mb-4:last-child {
+  margin-bottom: 1rem;
+}
+
+.last\:border-b-2:last-child {
+  border-bottom-width: 2px;
+}
+
+.last\:pb-2:last-child {
+  padding-bottom: 0.5rem;
+}
 
 @media (min-width: 768px) {
   .md\:flex {

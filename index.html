@@ -1,5 +1,6 @@
 ---
 layout: default 
+banner-image: https://picsum.photos/id/684/1000/600
 seo:
     title: This should appear in the browser tab
     description:
@@ -8,5 +9,24 @@ seo:
     hide-from-google: false
 ---
 
-<p class="bg-yellow-400"> This is some text on the homepage </p> 
+<section class="bg-[#E0DCD9] text-[#1E1E1E]">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-16 p-5p">
+        <div style="background-image:url(https://picsum.photos/id/684/600/400)" class="min-h-[70vh] bg-cover bg-no-repeat">
+        </div>
+        <div class="flex items-center">
+            <div>
+                <h2> A fascinating heading about this site.</h2>
+                <p class="pb-[2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ullam molestiae veniam iste voluptatem ab eligendi culpa. Neque voluptatibus a maxime, voluptatem molestias officiis ab, culpa quidem, saepe aliquam impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quae iure harum voluptatem ducimus fugit, temporibus, nam vero qui modi tempore ullam facere dolorum dicta adipisci nihil ut ipsa.</p>
+                <a href="#" class="button">READ MORE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include upcoming-destinations.html %}
+
+{% include blog-recent.html %}
+
+
+
 

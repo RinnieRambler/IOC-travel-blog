@@ -18,14 +18,14 @@ html {
 @layer base {
 
   h1, h2, h3, h4  {
-      @apply font-sans mb-[0.5em];
+      @apply font-serif mb-[0.5em];
   }
 
   h1 {
-      @apply text-3xl leading-tight;
+      @apply text-9xl leading-tight;
   }
   h2 {
-      @apply text-2xl leading-tight;
+      @apply text-6xl leading-tight;
   }
   h3 {
       @apply text-xl leading-tight;
@@ -53,7 +53,7 @@ html {
   }
 
   .button  {
-      @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+      @apply inline-block pt-2 uppercase tracking-wide border-b-2 border-inherit;
   }
   
 }

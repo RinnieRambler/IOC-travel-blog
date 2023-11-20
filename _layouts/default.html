@@ -8,7 +8,31 @@
 </head>
 
 <body>
-    <header>Header to go here</header>
+    <header class="bg-[#F2EFEC]">
+        <div class="max-w-screen-xl mx-auto flex justify-between p-5p">
+            <nav>
+                <a href="#">LOGO</a>
+            </nav>
+            <nav class="flex gap-10">
+                <a href="#">BLOG</a>
+                <a href="#">SHOP</a>
+                <a href="#">MEMBERS LOGIN</a>
+            </nav>
+        </div>
+    </header>
+
+    {% if page.banner-image %}
+        <section style="background-image:url({{page.banner-image}})" class="bg-cover bg-no-repeat min-h-screen">
+            <div class="max-w-screen-xl mx-auto flex items-center min-h-[100vh] p-5p">
+                <div class="text-[#F2EFEC]">
+                    <h1 class="max-w-[40vw]">A whole new world.</h1>
+                    <p class="uppercase max-w-[22vw]">Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.</p>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+
+   
 
     {{content}}
 
