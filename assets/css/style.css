@@ -518,6 +518,10 @@ p {
   -moz-columns: 3;
        columns: 3;
 }
+.break-inside-avoid {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
