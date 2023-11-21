@@ -31,9 +31,6 @@ html {
       @apply text-xl leading-tight font-serif;
   }
 
-  h3 {
-      @apply text-4xl leading-tight uppercase font-sans;
-  }
   h4 {
       @apply text-lg leading-tight;
   }

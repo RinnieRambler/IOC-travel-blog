@@ -1,9 +1,32 @@
 ---
 layout: default
+banner-image: /assets/images/blog-assets/blog-bg-17.jpg
+banner-heading: A whole new world.
+banner-paragraph: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+banner-link: false
+seo:
+    title: This should appear in the browser tab
+    description:
+    keywords:
+    social_image:
+    hide-from-google: false
 ---
 <!---------- travel guides card section -------->
+
+
 {% include travel-guide-featured.html %}
 
 <!---------- quote banner section -------->
 
+<section style="background-image:url('/assets/images/blog-assets/blog-bg-10.jpg')" class="bg-cover bg-center">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 min-h-70 ">
+            <div class=" flex items-center p-5p">
+                <h2 class="text-white">"Once you get a taste for travel, you'll never be the same."</h2>
+            </div>
+            <div></div>
+    </div>
+</section>
+
 <!---------- presets card section -------->
+
+{% include preset-featured.html %}

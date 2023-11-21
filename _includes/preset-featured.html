@@ -1,9 +1,8 @@
 <section class="bg-[#F2EFEC]">
     <div class="px-2 pb-5p max-w-screen-xl mx-auto">
-        <h3 class="text-center font-serif text-6xl pt-16">Travel Guides</h3>
-        <div class="grid grid-cols-3 gap-6 p-8 ">
-            
-                {% for item in site.travel-guides limit: 3 %}
+        <h3 class="text-center font-serif text-6xl pt-16">Lightroom Presets</h3>
+        <div class="grid grid-cols-3 gap-6 p-8"> 
+                {% for item in site.presets limit: 3 %}
             <div class=" bg-white min-h-70">
                 <div style="background-image:url({{item.featured_image}})" class="aspect-portrait-tall bg-center bg-cover">
                 </div>
@@ -14,8 +13,7 @@
                     <p>${{item.price}}</p>
                 </div>
             </div>
-                {% endfor %}
-            
+                {% endfor %}  
         </div>
     </div>
 </section>
