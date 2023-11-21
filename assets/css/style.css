@@ -325,6 +325,7 @@ h2 {
   line-height: .85;
 }
 h3 {
+  font-family: italiana, ui-serif;
   font-family: montserrat, ui-sans;
   font-size: 2.25rem;
   text-transform: uppercase;
@@ -337,6 +338,12 @@ h4 {
 p {
   margin-bottom: 0.5em;
   line-height: 1.5;
+}
+a {
+  border-bottom-width: 2px;
+  border-color: currentColor;
+  font-family: italiana, ui-serif;
+  text-transform: uppercase;
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -438,6 +445,9 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
+.post-content {
+  text-align: center;
+}
 .absolute {
   position: absolute;
 }
@@ -450,18 +460,15 @@ p {
   bottom: 0px;
   left: 0px;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
 .m-4 {
   margin: 1rem;
 }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .flex {
   display: flex;
@@ -474,6 +481,9 @@ p {
 }
 .h-full {
   height: 100%;
+}
+.h-\[70vh\] {
+  height: 70vh;
 }
 .min-h-\[40vh\] {
   min-height: 40vh;
@@ -508,6 +518,12 @@ p {
 .shrink-0 {
   flex-shrink: 0;
 }
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+.basis-1\/2 {
+  flex-basis: 50%;
+}
 .columns-3 {
   -moz-columns: 3;
        columns: 3;
@@ -516,11 +532,11 @@ p {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 .items-end {
   align-items: flex-end;
@@ -540,14 +556,21 @@ p {
 .gap-10 {
   gap: 2.5rem;
 }
-.gap-4 {
-  gap: 1rem;
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 .border-t-2 {
   border-top-width: 2px;
 }
+.border-b-2 {
+  border-bottom-width: 2px;
+}
 .border-current {
   border-color: currentColor;
+}
+.border-\[\#1E1E1E\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
 }
 .bg-\[\#E0DCD9\] {
   --tw-bg-opacity: 1;
@@ -606,6 +629,10 @@ p {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -617,6 +644,14 @@ p {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pr-12 {
   padding-right: 3rem;
@@ -630,8 +665,19 @@ p {
 .text-center {
   text-align: center;
 }
+.font-serif {
+  font-family: italiana, ui-serif;
+}
 .font-sans {
   font-family: montserrat, ui-sans;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 .text-3xl {
   font-size: 1.875rem;

@@ -2,8 +2,8 @@
 layout: post
 title: Fifth Blog Post 
 description: This is a short description of the fifth blog post
-featured_image: 'https://placekitten.com/500/600'
-author:
+featured_image: /assets/images/blog-assets/blog-bg-18.jpg
+author: Tina May
 seo:
     title: This should appear in the browser tab
     description: 

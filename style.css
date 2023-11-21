@@ -28,7 +28,7 @@ html {
       @apply text-6xl leading-tight;
   }
   h3 {
-      @apply text-xl leading-tight;
+      @apply text-xl leading-tight font-serif;
   }
 
   h3 {
@@ -40,6 +40,10 @@ html {
 
   p {
       @apply mb-[0.5em] leading-normal;
+  }
+
+  a {
+      @apply font-serif uppercase border-b-2 border-current;
   }
 
 }
@@ -56,4 +60,12 @@ html {
       @apply inline-block pt-2 uppercase tracking-wide border-b-2 border-current;
   }
   
+  .post-content {
+     @apply text-center;
+  }
+
+ 
+
+
+
 }

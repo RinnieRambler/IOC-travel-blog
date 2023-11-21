@@ -2,7 +2,7 @@
 layout: post
 title: Second Blog Post 
 description: This is a short description of the second blog post
-featured_image: 'https://placekitten.com/500/600'
+featured_image: /assets/images/blog-assets/blog-bg-16.jpg
 author:
 seo:
     title: This should appear in the browser tab

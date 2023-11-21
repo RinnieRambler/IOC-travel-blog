@@ -2,7 +2,7 @@
 layout: post
 title: ninth Blog Post 
 description: This is a short description of the ninth blog post
-featured_image: 'https://placekitten.com/500/900'
+featured_image: /assets/images/blog-assets/blog-bg-16.jpg
 author:
 seo:
     title: This should appear in the browser tab
