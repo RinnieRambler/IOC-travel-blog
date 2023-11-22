@@ -437,8 +437,6 @@ a {
 }
 .button {
   display: inline-block;
-  border-bottom-width: 2px;
-  border-color: currentColor;
   padding-top: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -458,6 +456,9 @@ a {
   bottom: 0px;
   left: 0px;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -468,14 +469,23 @@ a {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .inline-block {
   display: inline-block;
 }
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .grid {
   display: grid;
+}
+.contents {
+  display: contents;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
@@ -545,6 +555,9 @@ a {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -565,6 +578,9 @@ a {
 }
 .gap-10 {
   gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .overflow-x-scroll {
   overflow-x: scroll;
@@ -605,6 +621,10 @@ a {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -675,6 +695,10 @@ a {
   padding-left: 5%;
   padding-right: 5%;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -690,6 +714,15 @@ a {
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pl-15p {
+  padding-left: 15%;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pt-5p {
+  padding-top: 5%;
 }
 .pb-\[2rem\] {
   padding-bottom: 2rem;

@@ -4,9 +4,10 @@
         <div class="grid grid-cols-3 gap-6 p-8"> 
                 {% for item in site.presets limit: 3 %}
             <div class=" bg-white min-h-70">
-                
-                <div style="background-image:url({{item.featured_image}})" class="aspect-portrait-tall bg-center bg-cover">
-                </div>
+                <a href="{{item.url}}">
+                    <div style="background-image:url({{item.featured_image}})" class="aspect-portrait-tall bg-center bg-cover">
+                    </div>
+                </a>    
             
                 <div class="py-5 px-4 max-w-[20vw]">
                     <h4 class="uppercase text-sm font-sans inline-block px-2 py-3 bg-[#F2EFEC]">{{item.type}}</h4>

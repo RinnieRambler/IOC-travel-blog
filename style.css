@@ -54,7 +54,7 @@ html {
   }
 
   .button  {
-      @apply inline-block pt-2 uppercase tracking-wide border-b-2 border-current;
+      @apply inline-block pt-2 uppercase tracking-wide;
   }
   
   .post-content {

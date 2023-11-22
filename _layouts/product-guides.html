@@ -2,16 +2,57 @@
 layout: default
 ---
 <!---------- Product text and image section ------>
-<section class="grid grid-cols-2">
+<section class="max-w-screen-xl mx-auto grid grid-cols-2">
   
-    <div>
-        <h2>{{page.title}}</h2>
-        <h4>{{page.subtitle}}</h4>
-        <p>{{page.description}}</p>
-        <a href="">Buy now</a>
+    <div class="pl-15p flex items-end">
+        <div>
+            <h2>{{page.title}}</h2>
+            <h4 class="pb-5">{{page.subtitle}}</h4>
+            <p class="pb-5">{{page.description}}</p>
+            <a href="" class="bg-black text-white py-2 px-5 mb-2 inline-block ">Buy now</a>
+        </div>
     </div>
     <div>
         <img src="{{page.featured_image}}" alt="">
     </div>
  
 </section>
+
+<!---------- What's inside section ------>
+
+<section class="max-w-screen-xl mx-auto">
+    <div class="pt-5p">
+        <h3>What's inside</h3>
+        <img src="{{page.gallery[0].image-path}}">
+        <div class="grid grid-cols-6 gap-2">
+            {% for image in page.gallery %}
+            <img src="{{image.image-path}}" alt="">
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+<!---------- Contents & included section  ------>
+
+<section class="">
+    <div class="max-w-screen-xl mx-auto p-5p">
+        <div class="grid grid-cols-3 gap-16">
+            <div class="col-span-2">
+                <h3>table of contents</h3>
+                {% for item in page.table-content %}
+                <div class="flex justify-between border-t-2 border-current first:mt-4 last:mb-4 last:border-b-2 py-6">
+                    <div>{{item.name}}</div>
+                    <div>{{item.about}}</div> 
+                </div>
+                {% endfor %}
+            </div>
+            <div class="py-6">
+                <h3>What's included</h3>
+                <p class="py-4">{{page.included}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include travel-guide-featured.html %}
