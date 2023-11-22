@@ -58,24 +58,24 @@ html {
   }
   
   .post-content {
-     @apply text-center;
+      @apply text-center;
   }
 
-  #section-memberspace-login-form {
-    
+  #body #section-memberspace-login-form {
+      @apply flex justify-start;
   }
 
   #body #memberspace-login-form input {
-    @apply border-b-2 border-b-black;
+      @apply border-b-2 border-b-black;
    }
    
    #body #memberspace-login-form label {
-       @apply uppercase;
+      @apply uppercase;
    }
    
    /* Forgot Email / forgot password text */
    #body #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-       @apply text-gray-600
+      @apply text-gray-600
     }
    
    
