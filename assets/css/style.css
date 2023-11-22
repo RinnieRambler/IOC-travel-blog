@@ -445,6 +445,16 @@ a {
 .post-content {
   text-align: center;
 }
+#section-memberspace-login-form {
+
+  }
+#memberspace-login-form input {
+    border: 2px solid blue;
+   }
+#memberspace-login-form label {
+       border: 2px solid yellow;
+   }
+/* Forgot Email / forgot password text */
 .absolute {
   position: absolute;
 }
