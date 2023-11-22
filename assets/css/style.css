@@ -446,15 +446,29 @@ a {
   text-align: center;
 }
 #section-memberspace-login-form {
-
+    
   }
-#memberspace-login-form input {
-    border: 2px solid blue;
-   }
-#memberspace-login-form label {
-       border: 2px solid yellow;
-   }
+#body #memberspace-login-form input {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+#body #memberspace-login-form label {
+  text-transform: uppercase;
+}
 /* Forgot Email / forgot password text */
+#body #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+#body #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+#body #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+       color: blue;
+   }
+#body .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 .absolute {
   position: absolute;
 }

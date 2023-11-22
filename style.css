@@ -62,35 +62,32 @@ html {
   }
 
   #section-memberspace-login-form {
-
+    
   }
 
-  #memberspace-login-form input {
-    border: 2px solid blue;
+  #body #memberspace-login-form input {
+    @apply border-b-2 border-b-black;
    }
    
-   #memberspace-login-form label {
-       border: 2px solid yellow;
+   #body #memberspace-login-form label {
+       @apply uppercase;
    }
    
    /* Forgot Email / forgot password text */
-   #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-       color: green;
+   #body #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+       @apply text-gray-600
+    }
+   
+   
+   #body #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+      @apply text-white;
    }
    
-   
-   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-       color: red;
-   }
-   
-   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+   #body #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
        color: blue;
    }
     
-   .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+   #body .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 
  
-
-
-
 }
