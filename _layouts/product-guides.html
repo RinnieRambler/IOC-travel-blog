@@ -2,7 +2,10 @@
 layout: default
 ---
 <!---------- Product text and image section ------>
-<section class="max-w-screen-xl mx-auto grid grid-cols-2">
+
+{% include split-banner.html %}
+
+<!-- <section class="max-w-screen-xl mx-auto grid grid-cols-2">
   
     <div class="pl-15p flex items-end">
         <div>
@@ -16,7 +19,7 @@ layout: default
         <img src="{{page.featured_image}}" alt="">
     </div>
  
-</section>
+</section> -->
 
 <!---------- What's inside section ------>
 
@@ -24,7 +27,7 @@ layout: default
     <div class="pt-5p">
         <h3>What's inside</h3>
         <img src="{{page.gallery[0].image-path}}">
-        <div class="grid grid-cols-6 gap-2">
+        <div class="grid grid-cols-6 gap-2 mt-2">
             {% for image in page.gallery %}
             <img src="{{image.image-path}}" alt="">
             {% endfor %}
@@ -56,3 +59,25 @@ layout: default
 </section>
 
 {% include travel-guide-featured.html %}
+
+<section class="">
+    <div class="px-2 pb-5p max-w-screen-xl mx-auto">
+        <h3 class="text-center font-serif text-6xl pt-16">Related products</h3>
+        <div class="grid grid-cols-3 gap-6 p-8 ">
+            
+                {% for item in site.travel-guides limit: 3 %}
+            <a href="{{item.url}}" class="min-h-50">
+                <div style="background-image:url({{item.featured_image}})" class="aspect-portrait-tall bg-center bg-cover">
+                </div>
+                <div class="py-5 px-4 max-w-[20vw]">
+                    <h4 class="uppercase text-sm font-sans inline-block px-2 py-3 bg-[#F2EFEC]">{{item.type}}</h4>
+                    <h4 class="uppercase font-sans py-2">{{item.title}}</h4>
+                    <p>{{item.description}}</p>
+                    <p>${{item.price}}</p>
+                </div>
+            </a>
+                {% endfor %}
+            
+        </div>
+    </div>
+</section>

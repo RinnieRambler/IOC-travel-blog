@@ -327,6 +327,7 @@ h2 {
 h3 {
   font-family: italiana, ui-serif;
   font-size: 1.25rem;
+  text-transform: uppercase;
   line-height: .85;
 }
 h4 {
@@ -472,6 +473,9 @@ a {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .inline-block {
   display: inline-block;
 }
@@ -504,6 +508,9 @@ a {
 }
 .min-h-70 {
   min-height: 70vh;
+}
+.min-h-50 {
+  min-height: 50vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -573,6 +580,9 @@ a {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .gap-16 {
   gap: 4rem;
 }
@@ -610,6 +620,10 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
 .bg-stone-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -621,10 +635,6 @@ a {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -679,6 +689,10 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -708,6 +722,9 @@ a {
 }
 .pt-16 {
   padding-top: 4rem;
+}
+.pl-30p {
+  padding-left: 30%;
 }
 .pr-12 {
   padding-right: 3rem;
@@ -759,6 +776,10 @@ a {
 .uppercase {
   text-transform: uppercase;
 }
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .text-\[\#1E1E1E\] {
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));
@@ -766,10 +787,6 @@ a {
 .text-\[\#F2EFEC\] {
   --tw-text-opacity: 1;
   color: rgb(242 239 236 / var(--tw-text-opacity));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
@@ -792,6 +809,10 @@ html {
 
 .last\:border-b-2:last-child {
   border-bottom-width: 2px;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {

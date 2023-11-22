@@ -28,7 +28,7 @@ html {
       @apply text-6xl leading-tight;
   }
   h3 {
-      @apply text-xl leading-tight font-serif;
+      @apply text-xl uppercase leading-tight font-serif;
   }
 
   h4 {
