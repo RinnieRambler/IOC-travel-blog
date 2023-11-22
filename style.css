@@ -61,9 +61,7 @@ html {
       @apply text-center;
   }
 
-  #body #section-memberspace-login-form {
-      @apply flex justify-start;
-  }
+
 
   #body #memberspace-login-form input {
       @apply border-b-2 border-b-black;

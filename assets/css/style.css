@@ -445,10 +445,6 @@ a {
 .post-content {
   text-align: center;
 }
-#body #section-memberspace-login-form {
-  display: flex;
-  justify-content: flex-start;
-}
 #body #memberspace-login-form input {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
@@ -484,6 +480,9 @@ a {
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 .m-4 {
   margin: 1rem;
